@@ -1,3 +1,5 @@
+[中文](README.md) | [English](README.en.md)
+
 # dsh-search-everything
 
 一个面向 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 的网页搜索提供方，在 **AnySearch**、**Firecrawl**、**TinyFish** 与 **DeepSeek Search** 之间自动路由，以 `search-everything` 为 id 注册到 `ctx.web`。
@@ -72,7 +74,7 @@ dsh plugin --profile desktop add ./dsh-search-everything
 | `dist/index.js` | 运行时插件（ESM，无需构建） |
 | `src/index.ts` | 同一实现的 TypeScript 源码 |
 | `cordis.patch.yml` | bundle patch：插件行 + `web` 行覆盖 |
-| `locale/en.json`、`locale/zh.json` | 插件管理器的展示元数据 |
+| `locale/en.json`、`locale/zh.json` | 插件管理器的展示元数据（含中文详情文档指向） |
 | `icon.svg` | 插件图标 |
 
 ## 许可证

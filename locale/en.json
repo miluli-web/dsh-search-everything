@@ -1,6 +1,7 @@
 {
   "meta": {
     "title": "search-everything",
-    "description": "One web-search provider that routes across AnySearch, Firecrawl, TinyFish and DeepSeek, and becomes the active ctx.web search backend."
+    "description": "One web-search provider that routes across AnySearch, Firecrawl, TinyFish and DeepSeek, and becomes the active ctx.web search backend.",
+    "detail": "README.en.md"
   }
 }
