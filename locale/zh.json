@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "全源搜索",
+    "description": "统一网页搜索提供方：在 AnySearch、Firecrawl、TinyFish 与 DeepSeek 之间自动路由，并接管 ctx.web 的搜索后端。"
+  }
+}

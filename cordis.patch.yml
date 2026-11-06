@@ -1,0 +1,24 @@
+# dsh-search-everything — bundle patch.
+#
+# 1. Inserts the plugin row, which registers the `search-everything` search
+#    provider on ctx.web.
+# 2. Overrides the base `web` row so that dsh-web selects that provider.
+#    dsh-base pins `searchProvider: deepseek-official`, and a pinned provider is
+#    never replaced by auto-selection, so without this override the plugin would
+#    register and stay unused. `fetchProvider: http` is restated because a patch
+#    replaces the whole config of the targeted row.
+#
+# Keys belong on the plugin row, in the user's profile layer, for example:
+#
+#   - id: search-everything
+#     name: dsh-search-everything
+#     config:
+#       api_key: <your anysearch key>
+- insert:
+    - id: search-everything
+      name: 'dsh-search-everything'
+- id: web
+  name: '@deepseek-ai/dsh-web'
+  config:
+    searchProvider: search-everything
+    fetchProvider: http
